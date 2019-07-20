@@ -1,0 +1,88 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('images/8.jpg');
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/8.jpg');
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .wrapper {
+    background-color: rgba(206, 206, 231, 0.294);
+    padding: 15px;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .my-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .btn:hover {
+    color: rgb(226, 168, 134);
+  }
+  .my-btn a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    position: relative;
+    align-items: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .my-btn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid rgb(149, 166, 189);
+    border-left: 3px solid rgb(149, 166, 189);
+    transition: width .5s, height .5s;
+    box-sizing: border-box;
+  }
+
+  .my-btn a:hover::before {
+    width: 100%;
+    height: 100%;
+  }
+
+  .my-btn a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid rgb(149, 166, 189);
+    border-right: 3px solid rgb(149, 166, 189);
+    transition: width .5s, height .5s;
+    box-sizing: border-box;
+  }
+
+  .my-btn a:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  .btn:focus, .btn:active {
+    box-shadow: none!important;
+  }
+
+    
+  @media only screen and (max-width: 745px) {
+    .wrapper {
+      padding: 20px;
+      width: 70%;
+    }
+  }
